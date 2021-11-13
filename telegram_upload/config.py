@@ -11,8 +11,8 @@ SESSION_FILE = os.path.expanduser('{}/telegram-upload'.format(CONFIG_DIRECTORY))
 def prompt_config(config_file):
     os.makedirs(os.path.dirname(config_file), exist_ok=True)
     click.echo('Go to https://my.telegram.org and create a App in API development tools')
-    api_id = click.prompt('Please Enter api_id', type=int)
-    api_hash = click.prompt('Now enter api_hash')
+    api_id = click.prompt('9681944', type=int)
+    api_hash = click.prompt('fed1896d84c13173a18ae7a607e98f22')
     with open(config_file, 'w') as f:
         json.dump({'api_id': api_id, 'api_hash': api_hash}, f)
     return config_file
